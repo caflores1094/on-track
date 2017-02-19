@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="ang/angular.min.js"></script>
+    <script src="ang/angular-route.min.js"></script>
+    <input type="text" ng-model="words">{{words}}
+
+    <ul class="repeating" ng-init = "peeps = [{name: 'Leo', city: 'LA'}, {name: 'Juan', city: 'SD'}, {name: 'Jose', city: 'SF'}, {name: 'Juana', city: 'SF'}]">
+      <li ng-repeat="person in peeps | filter: words | orderBy:'city '">{{person.name}} - {{person.city}}</li>
+    </ul>
+
+  </body>
+</html>
