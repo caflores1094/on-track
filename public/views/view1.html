@@ -1,0 +1,7 @@
+<div>
+  <h2>View1</h2>
+  <h3> {{greeting}}</h3>
+  <ul>
+    <li ng-repeat="person in peeps | orderBy: 'city'">{{person.name}} - {{person.city}}</li>
+  </ul>
+</div>

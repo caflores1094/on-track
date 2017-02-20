@@ -1,0 +1,20 @@
+<div>
+  <h2>View2</h2>
+  <h3> {{greeting}}</h3>
+  <ul>
+    <li ng-repeat="person in peeps | orderBy: 'city'">{{person.name}} - {{person.city}}</li>
+  </ul>
+  <ul>
+    <li ng-repeat="money in monies">{{money | currency}}</li>
+  </ul>
+  <select ng-model="caption">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <h2 ng-model="caption"> {{caption | uppercase}}</h2>
+
+  <div ng-click="changeCaption()">ChangeCaption</div>
+
+</div>
